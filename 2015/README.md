@@ -50,8 +50,10 @@ python run_all.py       # Run all available days
 - solution.py: Main solution file
 - input.txt: Puzzle input
 - test.txt: Test cases with expected results
-  - Format: # Test -> Solution
-            Test
+```text
+# Test case -> Solution
+Test case
+```
 - utils/: Shared utilities and templates
 
 ## Learning Points
