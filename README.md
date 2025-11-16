@@ -17,6 +17,7 @@ My solutions to [Advent of Code](https://adventofcode.com/) challenges, starting
 
 ## Project Structure
 Each year follows this organization:
+```text
 year/
 ├── README
 ├── day01/
@@ -26,6 +27,7 @@ year/
 ├── day02/
 └── ...
 Days I find particularly challenging will also include a README.
+```
 
 ## Setup and Running:
 ```bash
