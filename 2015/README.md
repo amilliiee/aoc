@@ -2,7 +2,7 @@
 Python solutions for [Advent of Code 2015](https://adventofcode.com/2015)
 
 ## Progress
-**16/50 Stars** ⭐ 🔄 In Progresss
+**18/50 Stars** ⭐ 🔄 In Progresss
 
 | Day | Challenge | Pt.1 | Pt.2 | Notes |
 | --- | --------- | ---- | ---- | ----- |

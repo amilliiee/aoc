@@ -4,7 +4,7 @@ My solutions to [Advent of Code](https://adventofcode.com/) challenges, starting
 ## Years Completed
 | Year | Language | Stars | Status |
 | ---- | -------- | ----- | ------ |
-[2015](./2015/) | Python | 16/50 | 🔄 In Progress |
+[2015](./2015/) | Python | 18/50 | 🔄 In Progress |
 [2016](./2016/) |  | 0/50 | ❌ Not Started |
 [2017](./2017/) |  | 0/50 | ❌ Not Started |
 [2018](./2018/) |  | 0/50 | ❌ Not Started |
