@@ -2,19 +2,19 @@
 Python solutions for [Advent of Code 2015](https://adventofcode.com/2015)
 
 ## Progress
-**10/50 Stars** ⭐ 🔄 In Progresss
+**16/50 Stars** ⭐ 🔄 In Progresss
 
 | Day | Challenge | Pt.1 | Pt.2 | Notes |
 | --- | --------- | ---- | ---- | ----- |
-| 1 | Not Quite Lisp | ⭐ | ⭐ | Counting floors |
-| 2 | I Was Told There Would Be No Math | ⭐ | ⭐ | Total amount of wrapping paper and ribbon |
-| 3 | Perfectly Spherical Houses in a Vacuum | ⭐ | ⭐ | Present delivery without and with a second Santa |
-| 4 | The Ideal Stocking Stuffer | ⭐ | ⭐ | MD5 hashes and hexadecimal |
-| 5 | Doesn't He Have Intern-Elves For This? | ⭐ | ⭐ | String parsing for 'naughty' or 'nice' |
-| 6 | Probably a Fire Hazard | ⭐ | ⭐ | Toggling lights in a 1000x1000 grid |
-| 7 | Some Assembly Required |  |  |  |
-| 8 | Matchsticks |  |  |  |
-| 9 | All in a Single Night |  |  |  |
+| 1 | Not Quite Lisp |⭐|⭐| Counting floors |
+| 2 | I Was Told There Would Be No Math |⭐|⭐| Total amount of wrapping paper and ribbon |
+| 3 | Perfectly Spherical Houses in a Vacuum |⭐|⭐| Present delivery without and with a second Santa |
+| 4 | The Ideal Stocking Stuffer |⭐|⭐| MD5 hashes and hexadecimal |
+| 5 | Doesn't He Have Intern-Elves For This? |⭐|⭐| String parsing for 'naughty' or 'nice' |
+| 6 | Probably a Fire Hazard |⭐|⭐| Toggling lights in a 1000x1000 grid |
+| 7 | Some Assembly Required |⭐|⭐| Recursion, so much recursion |
+| 8 | Matchsticks |⭐|⭐| String literals vs. characters in memory |
+| 9 | All in a Single Night |⭐|⭐| The traveling salesman problem for Santa |
 | 10 | Elves Look, Elves Say |  |  |  |
 | 11 | Corporate Policy |  |  |  |
 | 12 | JSAbacusFramework.io |  |  |  |

@@ -44,7 +44,8 @@ class Day{day:02d}(Solution):
         filepath = Path(__file__).parent / filename
         
         with open(filepath, 'r') as f:
-            return f.read().strip()
+            return f.read().strip() # Use for char by char reading inside part1/2
+            # return [line.strip() for line in f] # Use for line by line reading inside part1/2
     
     def part1(self, data):
         # Solution for part 1

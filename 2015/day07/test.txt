@@ -1,0 +1,11 @@
+# 123 -> x: signal 123 is provided to wire x
+123 -> x
+
+# x AND y -> z: bitwise AND of x and y is provided to wire z
+x AND y -> z
+
+# p LSHIFT 2 -> q: value from wire p is left shifted by 2 then provided to wire q
+p LSHIFT 2 -> q
+
+# NOT e -> f: bitwise compliment of wire e is provided to wire file
+NOT e -> f
