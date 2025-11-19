@@ -2,18 +2,18 @@
 My solutions to [Advent of Code](https://adventofcode.com/) challenges, starting at the beginning.
 
 ## Years Completed
-| Year | Language | Stars | Status |
-| ---- | -------- | ----- | ------ |
-[2015](./2015/) | Python | 18/50 | 🔄 In Progress |
-[2016](./2016/) |  | 0/50 | ❌ Not Started |
-[2017](./2017/) |  | 0/50 | ❌ Not Started |
-[2018](./2018/) |  | 0/50 | ❌ Not Started |
-[2019](./2019/) |  | 0/50 | ❌ Not Started |
-[2020](./2020/) |  | 0/50 | ❌ Not Started |
-[2021](./2021/) |  | 0/50 | ❌ Not Started |
-[2022](./2022/) |  | 0/50 | ❌ Not Started |
-[2023](./2023/) |  | 0/50 | ❌ Not Started |
-[2024](./2024/) |  | 0/50 | ❌ Not Started |
+|Year|Language|Stars|Status|
+|----|--------|-----|------|
+[2015](./2015/)|Python|24/50|🔄 In Progress|
+[2016](./2016/)|  |0/50|❌ Not Started|
+[2017](./2017/)|  |0/50|❌ Not Started|
+[2018](./2018/)|  |0/50|❌ Not Started|
+[2019](./2019/)|  |0/50|❌ Not Started|
+[2020](./2020/)|  |0/50|❌ Not Started|
+[2021](./2021/)|  |0/50|❌ Not Started|
+[2022](./2022/)|  |0/50|❌ Not Started|
+[2023](./2023/)|  |0/50|❌ Not Started|
+[2024](./2024/)|  |0/50|❌ Not Started|
 
 ## Project Structure
 Each year follows this organization:
