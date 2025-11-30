@@ -48,7 +48,7 @@ python solution.py --real          # Run only real data (the provided input)
 python solution.py --part 2 --test # Run only part 2 tests
 ```
 
-** 2015 days 1-12 used the old format below**
+**2015 days 1-12 used the old format below**
 ```bash
 # Create a new day
 python create_day.py 2 # Create day 2
