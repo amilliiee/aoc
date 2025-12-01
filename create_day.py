@@ -6,14 +6,14 @@ def create_day(year, day):
     day_str = f"day{day:02d}"
     year_dir = Path(f'{year}')
     day_dir = year_dir / day_str
-    day_dir.mkdir(parents=True, exist_ok=True)  # parents=True creates year dir if needed
+    day_dir.mkdir(parents=True, exist_ok=True)
     
     # Create solution.py template
     solution_template = f'''import sys
 from pathlib import Path
 
 # Add utils to path  
-sys.path.append(str(Path(__file__).parent.parent.parent))  # Updated path
+sys.path.append(str(Path(__file__).parent.parent.parent))
 
 from utils.solution_template import Solution
 
@@ -58,32 +58,49 @@ class Day{day:02d}(Solution):
         # Your implementation here
         return None
         
-    def run_tests(self):
-        # Run all test cases with expected results
-        print(f"--- Day {{self.day:02d}} Test Cases ---")
-        for i, test_input in enumerate(self.test_inputs, 1):
-            result = self.part1([test_input])  # Wrap in list for Day 9+ style
-            print(f"Test {{i}}: '{{test_input}}' -> {{result}}")
-    
     def run(self):
-        # Run both parts with test and real data
         if not hasattr(self, 'test_inputs'):
             self.load_data()
         
-        # Run individual test cases
-        self.run_tests()
-        print()
+        import argparse
+        parser = argparse.ArgumentParser(description=f'Run Day {day} solutions')
+        parser.add_argument('--part', type=int, choices=[1, 2], help='Run specific part')
+        parser.add_argument('--test', action='store_true', help='Run tests only')
+        parser.add_argument('--real', action='store_true', help='Run real data only')
         
-        # Run on real data
-        print("--- Real Data ---")
-        real_result1 = self.part1(self.real_data)
-        print(f"Part 1: {{real_result1}}")
-        
+        # Parse command line args if any, else use defaults
         try:
-            real_result2 = self.part2(self.real_data)
-            print(f"Part 2: {{real_result2}}")
-        except Exception as e:
-            print(f"Part 2 not implemented: {{e}}")
+            args = parser.parse_args()
+        except SystemExit:
+            args = argparse.Namespace(part=None, test=False, real=False)
+        
+        if not args.real:
+            # Run tests
+            print(f"--- Day {day:02d} Test Cases ---")
+            for i, test_input in enumerate(self.test_inputs, 1):
+                if not args.part or args.part == 1:
+                    result1 = self.part1([test_input] if self.day >= 9 else test_input)
+                    print(f"Part 1 Test {{i}}: '{{test_input}}' -> {{result1}}")
+                if not args.part or args.part == 2:
+                    try:
+                        result2 = self.part2([test_input] if self.day >= 9 else test_input)
+                        print(f"Part 2 Test {{i}}: '{{test_input}}' -> {{result2}}")
+                    except Exception as e:
+                        print(f"Part 2 Test {{i}}: Not implemented - {{e}}")
+            print()
+        
+        if not args.test:
+            # Run real data
+            print("--- Real Data ---")
+            if not args.part or args.part == 1:
+                real_result1 = self.part1(self.real_data)
+                print(f"Part 1: {{real_result1}}")
+            if not args.part or args.part == 2:
+                try:
+                    real_result2 = self.part2(self.real_data)
+                    print(f"Part 2: {{real_result2}}")
+                except Exception as e:
+                    print(f"Part 2 not implemented: {{e}}")
 
 if __name__ == "__main__":
     solution = Day{day:02d}()

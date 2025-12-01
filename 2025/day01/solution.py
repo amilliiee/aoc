@@ -2,7 +2,7 @@ import sys
 from pathlib import Path
 
 # Add utils to path  
-sys.path.append(str(Path(__file__).parent.parent.parent))  # Updated path
+sys.path.append(str(Path(__file__).parent.parent.parent))
 
 from utils.solution_template import Solution
 
@@ -22,11 +22,8 @@ class Day01(Solution):
         test_inputs = []
         
         with open(filepath, 'r') as f:
-            for line in f:
-                clean_line = line.strip()
-                if clean_line and not clean_line.startswith('#'):
-                    test_inputs.append(clean_line)
-        return test_inputs
+            #return f.read().strip() # Use for char by char reading inside part1/2
+            return [line.strip() for line in f] # Use for line by line reading inside part1/2
     
     def read_input(self, test=False):
         # Read input file
@@ -34,45 +31,89 @@ class Day01(Solution):
         filepath = Path(__file__).parent / filename
         
         with open(filepath, 'r') as f:
-            return f.read().strip() # Use for char by char reading inside part1/2
-            # return [line.strip() for line in f] # Use for line by line reading inside part1/2
+            #return f.read().strip() # Use for char by char reading inside part1/2
+            return [line.strip() for line in f] # Use for line by line reading inside part1/2
     
     def part1(self, data):
-        # Solution for part 1
-        # Your implementation here
-        return None
+        zero_ct = 0
+        pos = 50
+        
+        for line in data:
+            dir = line[0]
+            dist = int(line[1:])
+            if dir.upper() == 'L':
+                pos = (pos - dist) % 100
+            else:
+                pos = (pos + dist) % 100
+            if pos == 0:
+                zero_ct += 1
+        return zero_ct
     
     def part2(self, data):
-        # Solution for part 2
-        # Your implementation here
-        return None
+        zero_ct = 0
+        pos = 50
+
+        for line in enumerate(data, 1):
+            dir = line[0]
+            dist = int(line[1:])
+
+            if dir.upper() == 'L':
+                # Count zeros during left turn
+                for step in range(1, dist + 1):
+                    if (pos - step) % 100 == 0:
+                        zero_ct += 1
+                pos = (pos - dist) % 100
+            else:  # 'R'
+                # Count zeros during right turn  
+                for step in range(1, dist + 1):
+                    if (pos + step) % 100 == 0:
+                        zero_ct += 1
+                pos = (pos + dist) % 100
+        return zero_ct
         
-    def run_tests(self):
-        # Run all test cases with expected results
-        print(f"--- Day {self.day:02d} Test Cases ---")
-        for i, test_input in enumerate(self.test_inputs, 1):
-            result = self.part1([test_input])  # Wrap in list for Day 9+ style
-            print(f"Test {i}: '{test_input}' -> {result}")
-    
     def run(self):
-        # Run both parts with test and real data
         if not hasattr(self, 'test_inputs'):
             self.load_data()
         
-        # Run individual test cases
-        self.run_tests()
-        print()
+        import argparse
+        parser = argparse.ArgumentParser(description=f'Run Day 1 solutions')
+        parser.add_argument('--part', type=int, choices=[1, 2], help='Run specific part')
+        parser.add_argument('--test', action='store_true', help='Run tests only')
+        parser.add_argument('--real', action='store_true', help='Run real data only')
         
-        # Run on real data
-        print("--- Real Data ---")
-        real_result1 = self.part1(self.real_data)
-        print(f"Part 1: {real_result1}")
-        
+        # Parse command line args if any, else use defaults
         try:
-            real_result2 = self.part2(self.real_data)
-            print(f"Part 2: {real_result2}")
-        except Exception as e:
-            print(f"Part 2 not implemented: {e}")
+            args = parser.parse_args()
+        except SystemExit:
+            args = argparse.Namespace(part=None, test=False, real=False)
+        
+        if not args.real:
+            # Run tests
+            print(f"--- Day 01 Test Cases ---")
+            for i, test_input in enumerate(self.test_inputs, 1):
+                if not args.part or args.part == 1:
+                    result1 = self.part1([test_input])
+                    print(f"Part 1 Test {i}: '{test_input}' -> {result1}")
+                if not args.part or args.part == 2:
+                    try:
+                        result2 = self.part2([test_input])
+                        print(f"Part 2 Test {i}: '{test_input}' -> {result2}")
+                    except Exception as e:
+                        print(f"Part 2 Test {i}: Not implemented - {e}")
+            print()
+        
+        if not args.test:
+            # Run real data
+            print("--- Real Data ---")
+            if not args.part or args.part == 1:
+                real_result1 = self.part1(self.real_data)
+                print(f"Part 1: {real_result1}")
+            if not args.part or args.part == 2:
+                try:
+                    real_result2 = self.part2(self.real_data)
+                    print(f"Part 2: {real_result2}")
+                except Exception as e:
+                    print(f"Part 2 not implemented: {e}")
 
 if __name__ == "__main__":
     solution = Day01()
