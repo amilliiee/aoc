@@ -7,7 +7,7 @@ Python solutions for [Advent of Code 2015](https://adventofcode.com/2015)
 |Day|Challenge|Pt.1|Pt.2|Notes|
 |---|---------|----|----|-----|
 |1|Secret Entrance|⭐|⭐|Counting zeroes two ways|
-|2|  |  |  |  |
+|2|Gift Shop|⭐|⭐|Repeating patterns in numbers|
 |3|  |  |  |  |
 |4|  |  |  |  |
 |5|  |  |  |  |
