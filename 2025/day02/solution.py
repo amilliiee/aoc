@@ -59,9 +59,25 @@ class Day02(Solution):
         return inval
     
     def part2(self, data):
-        # Solution for part 2
-        # Your implementation here
-        return None
+        inval = 0
+        for range_str in data:
+            start_str, end_str = range_str.split('-')
+            start = int(start_str)
+            end = int(end_str)
+            start_len = len(start_str)
+            end_len = len(end_str)
+            
+            for num in range(start, end + 1):
+                s = str(num)
+                n = len(s)
+                for k in range(2, n + 1):
+                    if n % k == 0:
+                        part_len = n // k
+                        parts = [s[i*part_len:(i+1)*part_len] for i in range(k)]
+                        if all(p == parts[0] for p in parts):
+                            inval += num
+                            break
+        return inval
         
     def run(self):
         if not hasattr(self, 'test_inputs'):
