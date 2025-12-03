@@ -8,7 +8,7 @@ Python solutions for [Advent of Code 2015](https://adventofcode.com/2015)
 |---|---------|----|----|-----|
 |1|Secret Entrance|⭐|⭐|Counting zeroes two ways|
 |2|Gift Shop|⭐|⭐|Repeating patterns in numbers|
-|3|  |  |  |  |
+|3|Lobby|⭐|⭐|Finding maximum combinations of numbers|
 |4|  |  |  |  |
 |5|  |  |  |  |
 |6|  |  |  |  |
