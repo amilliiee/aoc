@@ -2,14 +2,14 @@
 Python solutions for [Advent of Code 2015](https://adventofcode.com/2015)
 
 ## Progress
-**6/24 Stars** ⭐ 🔄 In Progresss
+**8/24 Stars** ⭐ 🔄 In Progresss
 
 |Day|Challenge|Pt.1|Pt.2|Notes|
 |---|---------|----|----|-----|
 |1|Secret Entrance|⭐|⭐|Counting zeroes two ways|
 |2|Gift Shop|⭐|⭐|Repeating patterns in numbers|
 |3|Lobby|⭐|⭐|Finding maximum combinations of numbers|
-|4|  |  |  |  |
+|4|Printing Department|⭐|⭐|Counting and removing paper rolls|
 |5|  |  |  |  |
 |6|  |  |  |  |
 |7|  |  |  |  |
