@@ -2,7 +2,7 @@
 Python solutions for [Advent of Code 2015](https://adventofcode.com/2015)
 
 ## Progress
-**8/24 Stars** ⭐ 🔄 In Progresss
+**10/24 Stars** ⭐ 🔄 In Progresss
 
 |Day|Challenge|Pt.1|Pt.2|Notes|
 |---|---------|----|----|-----|
@@ -10,7 +10,7 @@ Python solutions for [Advent of Code 2015](https://adventofcode.com/2015)
 |2|Gift Shop|⭐|⭐|Repeating patterns in numbers|
 |3|Lobby|⭐|⭐|Finding maximum combinations of numbers|
 |4|Printing Department|⭐|⭐|Counting and removing paper rolls|
-|5|  |  |  |  |
+|5|Caffeteria|⭐|⭐|Intersections and unions of ingredients|
 |6|  |  |  |  |
 |7|  |  |  |  |
 |8|  |  |  |  |

@@ -14,7 +14,7 @@ My solutions to [Advent of Code](https://adventofcode.com/) challenges, starting
 [2022](./2022/)|  |0/50|❌ Not Started|
 [2023](./2023/)|  |0/50|❌ Not Started|
 [2024](./2024/)|  |0/50|❌ Not Started|
-[2025](./2025/)|Python|8/24|🔄 In Progress|
+[2025](./2025/)|Python|10/24|🔄 In Progress|
 
 ## Project Structure
 Each year follows this organization:
