@@ -2,7 +2,7 @@
 Python solutions for [Advent of Code 2015](https://adventofcode.com/2015)
 
 ## Progress
-**12/24 Stars** ⭐ 🔄 In Progresss
+**14/24 Stars** ⭐ 🔄 In Progresss
 
 |Day|Challenge|Pt.1|Pt.2|Notes|
 |---|---------|----|----|-----|
@@ -12,7 +12,7 @@ Python solutions for [Advent of Code 2015](https://adventofcode.com/2015)
 |4|Printing Department|⭐|⭐|Counting and removing paper rolls|
 |5|Cafeteria|⭐|⭐|Intersections and unions of ingredients|
 |6|Trash Compactor|⭐|⭐|Cephalopod math|
-|7|  |  |  |  |
+|7|Laboratories|⭐|⭐|Tracing a splitting beam|
 |8|  |  |  |  |
 |9|  |  |  |  |
 |10|  |  |  |  |
