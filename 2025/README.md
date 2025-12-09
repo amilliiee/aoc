@@ -2,7 +2,7 @@
 Python solutions for [Advent of Code 2015](https://adventofcode.com/2015)
 
 ## Progress
-**16/24 Stars** ⭐ 🔄 In Progresss
+**18/24 Stars** ⭐ 🔄 In Progresss
 
 |Day|Challenge|Pt.1|Pt.2|Notes|
 |---|---------|----|----|-----|
@@ -14,7 +14,7 @@ Python solutions for [Advent of Code 2015](https://adventofcode.com/2015)
 |6|Trash Compactor|⭐|⭐|Cephalopod math|
 |7|Laboratories|⭐|⭐|Tracing a splitting beam|
 |8|Playground|⭐|⭐|Too many lights|
-|9|  |  |  |  |
+|9|Movie Theater|⭐|⭐|Rectangles everywhere|
 |10|  |  |  |  |
 |11|  |  |  |  |
 |12|  |  |  |  |
