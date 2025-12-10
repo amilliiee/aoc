@@ -4,5 +4,21 @@
         "**/*.rpa": true,
         "**/*.rpymc": true,
         "**/cache/": true
-    }
+    },
+    
+    // ---- PYTHON SETTINGS ----
+    "python.defaultInterpreterPath": "${env:HOME}/.pyenv/shims/python",
+    
+    // ---- TERMINAL SETTINGS ----
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "terminal.integrated.env.osx": {
+        "PATH": "${env:HOME}/.pyenv/shims:${env:HOME}/.pyenv/bin:${env:PATH}"
+    },
+    
+    // ---- CLEAN UP OLD SETTINGS ----
+    "python.pythonPath": "${workspaceFolder}/venv/bin/python", // Remove this if exists
+    
+    // Optional: Auto-select venv if present
+    "python.terminal.activateEnvironment": true,
+    "python.terminal.activateEnvInCurrentTerminal": true
 }

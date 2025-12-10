@@ -2,7 +2,7 @@
 Python solutions for [Advent of Code 2015](https://adventofcode.com/2015)
 
 ## Progress
-**18/24 Stars** ⭐ 🔄 In Progresss
+**20/24 Stars** ⭐ 🔄 In Progresss
 
 |Day|Challenge|Pt.1|Pt.2|Notes|
 |---|---------|----|----|-----|
@@ -15,7 +15,7 @@ Python solutions for [Advent of Code 2015](https://adventofcode.com/2015)
 |7|Laboratories|⭐|⭐|Tracing a splitting beam|
 |8|Playground|⭐|⭐|Too many lights|
 |9|Movie Theater|⭐|⭐|Rectangles everywhere|
-|10|  |  |  |  |
+|10|Factory|⭐|⭐|XOR and AND for lights and joltage|
 |11|  |  |  |  |
 |12|  |  |  |  |
 
